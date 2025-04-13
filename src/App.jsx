@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Cards_dashboard from './components/Cards_dashboard/Cards_dashboard'
-import Cards_appointment from './components/Cards_appointment/Cards_appointment';
+import Cards_dashboard from './components/Dashboard_comp/Cards_dashboard/Cards_dashboard'
+import Cards_appointment from './components/Appointment_comp/Cards_appointment/Cards_appointment';
 
 
 const data = [
