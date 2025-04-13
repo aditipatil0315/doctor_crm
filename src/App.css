@@ -3,9 +3,25 @@
 
 
 .main_app {
-  background-color: red;
-  height: auto;
+  display: flex;
+  height: 100vh;
   width: 100%;
 
 
+}
+
+
+.navbar {
+  background-color: rgb(117, 85, 211);
+  width: 18%;
+  height: 100%;
+}
+
+.content_panel {
+  flex-direction: column;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 82%;
+  height: 100%;
 }

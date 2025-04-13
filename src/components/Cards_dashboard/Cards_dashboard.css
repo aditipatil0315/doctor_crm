@@ -1,0 +1,51 @@
+
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    min-width: 200px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .card-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f30856;
+  }
+  
+  /* Responsive tweaks */
+  @media (min-width: 768px) {
+    .card-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-x: visible;
+    }
+  
+    .card {
+      min-width: 250px;
+    }
+  }
+  
