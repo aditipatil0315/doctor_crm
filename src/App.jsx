@@ -1,6 +1,5 @@
 import './App.css'
 import { CssBaseline, Container } from "@mui/material";
-import Appt_list from './components/Appointment_comp/Appt_list/Appt_list';
 
 
 
@@ -32,6 +31,8 @@ import Gender_chart from './components/Dashboard_comp/Gender_Chart/Gender_Chart'
 
 
 // Appt_list APPT_LISTTT
+import Appt_list from './components/Appointment_comp/Appt_list/Appt_list';
+
 
 
 const appointmentsData = [
@@ -54,6 +55,32 @@ const appointmentsData = [
     time: "11:30 AM",
   },
   // Add more...
+];
+
+
+
+// PATIENT LIST 
+import PatientList from './components/Patient_comp/PatientList/PatientList';
+
+
+const samplePatients = [
+  {
+    id: 1,
+    name: "Alice Johnson",
+    age: 29,
+    gender: "Female",
+    contact: "9876543210",
+    address: "Downtown Clinic, Street 12",
+  },
+  {
+    id: 2,
+    name: "Rahul Verma",
+    age: 42,
+    gender: "Male",
+    contact: "9876500011",
+    address: "Sunshine Apartments, Road 7",
+  },
+  // Add more patients...
 ];
 
 
@@ -92,6 +119,11 @@ function App() {
       {/* APPOINTMENT LIST */}
     <div style={{ padding: "1rem" }}>
       <Appt_list appointments={appointmentsData}/>
+    </div>
+
+    {/* PATIENT LIST  */}
+    <div style={{ padding: "1rem" }}>
+      <PatientList patients={samplePatients} />
     </div>
 
 
