@@ -62,6 +62,9 @@ const appointmentsData = [
 // PATIENT LIST 
 import PatientList from './components/Patient_comp/PatientList/PatientList';
 
+// ADD PATIENT CARD
+import PatientStatsCard from './components/Patient_comp/AddPatientCard/PatientStatsCard';
+
 
 const samplePatients = [
   {
@@ -124,7 +127,16 @@ function App() {
     {/* PATIENT LIST  */}
     <div style={{ padding: "1rem" }}>
       <PatientList patients={samplePatients} />
+
+
+       {/* ADD PATIENT CARD */}
+    <PatientStatsCard/>
+
+
     </div>
+
+
+   
 
 
     </div>
